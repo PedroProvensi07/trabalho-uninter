@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Meu Perfil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Bem-vindo ao Meu Perfil</h1>
+  </header>
+
+  <nav>
+    <button onclick="mostrarSecao('sobre')">Sobre Mim</button>
+    <button onclick="mostrarSecao('escolaridade')">Escolaridade e Idiomas</button>
+    <button onclick="mostrarSecao('portfolio')">Meu Portfólio</button>
+    <button onclick="mostrarSecao('contato')">Contato</button>
+  </nav>
+
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Olá! Meu nome é Pedro Lucas Provensi. Tenho interesse em tecnologia, design e desenvolvimento web. Gosto de aprender coisas novas e estou sempre buscando melhorar minhas habilidades.</p>
+    <p>Tenho 24 anos e sou do estado de Santa Catarina.</p>
+    <p>Sou atleta de atletismo.</p>
+
+    <div class="galeria">
+      <img src="Imagens/Corrida (3).JPG" alt="Pedro Lucas Provensi" width="300" height="400">
+      <div class="coluna">
+        <img src="Imagens/Corrida (2).JPG" alt="Pedro Lucas Provensi - 2" width="300" height="190">
+        <img src="Imagens/Corrida (1).jpeg" alt="Pedro Lucas Provensi - 3" width="300" height="190">
+      </div>
+    </div>
+
+    <p>Um dos meus hobbies é PESCARIA, sempre que possível vou pescar no Rio Uruguai, é aonde eu relaxo e curto a natureza.</p>
+
+    <div class="galeria">
+      <img src="Imagens/Pesca (1).jpeg" alt="Pedro Lucas Provensi" width="300" height="400">
+      <div class="coluna">
+        <img src="Imagens/Pesca (2).jpeg" alt="Pedro Lucas Provensi - 2" width="300" height="400">
+      </div>
+    </div>
+  </section>
+
+  <section id="escolaridade">
+    <h2>Escolaridade e Idiomas</h2>
+    <p>Estou cursando Engenharia de Software. Já concluí o Ensino Médio na cidade onde moro.</p>
+    <p>Já conclui o Ensino Médio na Escola de Educação Básica Felisberto de Carvalho. Fazem 5 anos que estou formado.</p>
+    
+    <a href="https://maps.app.goo.gl/cfxY1xj7F3MKRFVj7" class="link-interativo" target="_blank">
+      Escola Felisberto no Google Maps
+    </a>
+
+    <p><strong>Idiomas:</strong> Português (nativo), Inglês (intermediário) com experiência de intercâmbio no Canadá na escola EC Vancouver.</p>
+
+    <a href="https://maps.app.goo.gl/3KXi6mhoa8GBRvpJ9" class="link-interativo" target="_blank">
+      EC Vancouver no Google Maps
+    </a>
+  </section>
+
+  <section id="portfolio">
+    <h2>Meu Portfólio</h2>
+    <p>Aqui estão alguns dos meus trabalhos:</p>
+    <ul>
+      <li>Hoje faço parte do time da Cooperativa de Crédito Sicoob Oestecredi, trabalho diretamente no setor do crédito. Setor esse que é a alma de uma cooperativa de crédito, atendemos cooperados para fornecer oportunidades de negócios de forma saudável.</li>
+      <div class="imagem-centralizada">
+        <img src="Imagens/Oestecredi - agência sede 2023 - 800x600.jpg" alt="Descrição da imagem" width="300">
+        <br><br>
+      </div>
+      <li>Já atuei como Representante Comercial de uma empresa de grande porte no segmento de confecção chamada OGOCHI por cerca de 3 anos.</li>
+      <li>E por fim, meu primeiro trabalho foi de assistente de um estúdio fotográfico em minha cidade, cuidando de edições de fotos, produção de cenários e até cobrindo eventos comemorativos.</li>
+    </ul>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Entre em contato comigo pelos seguintes meios:</p>
+    <ul>
+      <li>Pedro Lucas Provensi</li>
+      <li>RU: 4833693</li>
+      <li>Email: pedro_provensi@hotmail.com</li>
+    </ul>
+  </section>
+
+  <script>
+    function mostrarSecao(id) {
+      const secoes = document.querySelectorAll('section');
+      secoes.forEach(secao => secao.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
